@@ -1,3 +1,11 @@
+body, h1, h2, h3, p, ul, li, a, button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+
 nav{
 background-color:#f2efef;
 }
@@ -36,7 +44,40 @@ button a{
     }
   ul li{
     list-style: none;
-  }  
+  }
+
+  /* Target the entire scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Style the scrollbar thumb */
+::-webkit-scrollbar-thumb {
+  background-color: #380909;
+}
+
+/* Style the scrollbar track */
+::-webkit-scrollbar-track {
+  background-color: #f0f0f0;
+}
+
+/* Style the scrollbar buttons */
+::-webkit-scrollbar-button {
+  background-color: #0c0707;
+}
+
+
+
+  /* #vehicleDropdown{
+    color: rgb(242, 245, 242);
+    background-color: rgb(117, 84, 247);
+    border: 1px solid black;
+    padding: 0.25rem 0.5rem;
+    text-transform: uppercase;
+    border-radius: 20px;
+    margin: 0.3rem;
+    font-size: 1rem;
+  }   */
 /*  
 .btn,
 .btn-alt {
@@ -80,4 +121,26 @@ backdrop-filter: blur( 3px );
 border-radius: 10px;
 border: 1px solid rgba( 255, 255, 255, 0.18 );
 
+}
+ul {
+  list-style: none;
+  padding-left: 0;
+  border-radius: 9px;
+}
+
+ul li {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.list-group{
+  width: 50%;
+  border-radius: 9px;
 }
